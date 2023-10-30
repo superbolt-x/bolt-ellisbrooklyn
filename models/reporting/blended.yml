@@ -5,17 +5,12 @@ sources:
   - name: reporting
     schema: reporting
     tables:
-      - name: googleads_campaign_performance 
-        identifier: eighthday_googleads_campaign_performance
-
       - name: facebook_ad_performance
-        identifier: eighthday_facebook_ad_performance
+        identifier: ellisbrooklyn_facebook_ad_performance
 
-      - name: shopify_sales
-        identifier: eighthday_shopify_sales
+      - name: adroll_campaign_performance
+        identifier: ellisbrooklyn_adroll_campaign_performance
       
-      - name: ga4_performance_by_campaign
-        identifier: eighthday_ga4_performance_by_campaign
+      - name: tiktok_ad_performance
+        identifier: ellisbrooklyn_tiktok_ad_performance
 
-      - name: googleanalytics_performance_by_campaign
-        identifier: eighthday_googleanalytics_performance_by_campaign
