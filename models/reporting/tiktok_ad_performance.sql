@@ -1,5 +1,5 @@
 {{ config (
-    alias = target.database + '_tiktok_performance_by_ad'
+    alias = target.database + '_tiktok_ad_performance'
 )}}
 
 SELECT 
