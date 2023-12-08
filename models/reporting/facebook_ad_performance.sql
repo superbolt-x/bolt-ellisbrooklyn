@@ -11,6 +11,9 @@ CASE WHEN campaign_name ~* 'Ulta' THEN 'Ulta'
     WHEN campaign_name ~* 'Sephora' THEN 'Sephora'
     ELSE 'DTC'
 END as campaign_type_custom,
+CASE WHEN campaign_name ~* '- US' THEN 'US'
+WHEN campaign_name ~* '- CA' THEN 'CA'
+END as region,
 adset_name,
 adset_id,
 adset_effective_status,
