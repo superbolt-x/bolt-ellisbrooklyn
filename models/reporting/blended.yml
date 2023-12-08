@@ -14,3 +14,6 @@ sources:
       - name: tiktok_ad_performance
         identifier: ellisbrooklyn_tiktok_ad_performance
 
+      - name: googleads_campaign_performance
+        identifier: ellisbrooklyn_googleads_campaign_performance
+
