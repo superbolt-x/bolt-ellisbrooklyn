@@ -13,6 +13,9 @@ adgroup_status,
 CASE WHEN adgroup_name ~* 'Ulta' THEN 'Ulta'
     WHEN adgroup_name ~* 'Sephora' THEN 'Sephora'
 END as adgroup_type_custom,
+CASE WHEN campaign_name ~* '- US' THEN 'US'
+WHEN campaign_name ~* '- CA' THEN 'CA'
+END as region,
 audience,
 ad_name,
 ad_id,
