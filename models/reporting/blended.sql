@@ -53,11 +53,11 @@
     FROM {{ source('reporting', 'adroll_campaign_performance') }}
     GROUP BY channel, date, date_granularity)
     
-    /*UNION ALL
+    UNION ALL
     
-    (SELECT 'Google' as channel, date, date_granularity, 
+    (SELECT 'Google - PMax' as channel, date, date_granularity, 
         COALESCE(SUM(spend),0) AS spend, COALESCE(SUM(impressions),0) AS impressions, COALESCE(SUM(clicks),0) AS clicks, COALESCE(SUM(purchases),0) AS purchases, 
         COALESCE(SUM(revenue),0) AS revenue
     FROM reporting.ellisbrooklyn_googleads_campaign_performance
-    WHERE campaign_type_custom = 'DTC'
-    GROUP BY channel, date, date_granularity)*/
+    WHERE campaign_type_default = 'Campaign Type: Performance Max'
+    GROUP BY channel, date, date_granularity)
