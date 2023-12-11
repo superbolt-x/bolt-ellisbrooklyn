@@ -50,7 +50,7 @@
     (SELECT 'Adroll' as channel, date, date_granularity, 
         COALESCE(SUM(spend),0) AS spend, COALESCE(SUM(impressions),0) AS impressions, COALESCE(SUM(clicks),0) AS clicks, COALESCE(SUM(purchases),0) AS purchases, 
         COALESCE(SUM(revenue),0) AS revenue
-    FROM {{ source('reporting', 'adroll_daily_performance') }}
+    FROM {{ source('reporting', 'adroll_performance') }}
     GROUP BY channel, date, date_granularity)
     
     UNION ALL
