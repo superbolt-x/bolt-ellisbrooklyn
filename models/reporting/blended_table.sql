@@ -1,5 +1,5 @@
 {{ config (
-    alias = target.database + '_blended'
+    alias = target.database + '_blended_'
 )}}
 
 (SELECT 'Facebook - DTC' as channel, date, date_granularity, 
