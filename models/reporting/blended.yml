@@ -2,6 +2,12 @@ version: 2
 
 sources:
 
+  - name: gsheet_raw
+    schema: gsheet_raw
+    tables:
+      - name: adroll_daily_performance
+        identifier: adroll_daily_performance
+  
   - name: reporting
     schema: reporting
     tables:
