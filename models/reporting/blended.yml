@@ -13,9 +13,6 @@ sources:
     tables:
       - name: facebook_ad_performance
         identifier: ellisbrooklyn_facebook_ad_performance
-
-      - name: adroll_campaign_performance
-        identifier: ellisbrooklyn_adroll_campaign_performance
       
       - name: tiktok_ad_performance
         identifier: ellisbrooklyn_tiktok_ad_performance
