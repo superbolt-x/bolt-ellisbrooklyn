@@ -1,5 +1,5 @@
 {{ config (
-    alias = target.database + '_adroll_daily_performance'
+    alias = target.database + '_adroll_performance'
 )}}
 
 SELECT DATE_TRUNC('day',date) as date, 'day' as date_granularity,
