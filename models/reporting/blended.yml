@@ -20,3 +20,6 @@ sources:
       - name: googleads_campaign_performance
         identifier: ellisbrooklyn_googleads_campaign_performance
 
+      - name: adroll_performance
+        identifier: ellisbrooklyn_adroll_performance
+
